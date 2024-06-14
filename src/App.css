@@ -11,9 +11,81 @@ body {
 }
 
 main{
-  max-width: 375px;
-  min-height: 380px;
-  margin: 100px auto 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 18px;
+  padding: 100px 5vw 0;
+  min-height: 375px;
+}
+
+.form{
+  width: 50%;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  padding: 30px 10px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+
+.form .form-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.form h3{
+  padding-bottom: 18px;
+}
+
+.form input{
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #222;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+.form select{
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #222;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+.form select + select{
+  margin-top: 16px;
+}
+
+.form button{
+  width: 100%;
+  border-radius: 8px;
+  background-color: #ddd;
+  border: 1px solid #222;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  margin-top: 16px;
+}
+
+.form .error-form{
+  color: crimson;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.form button:hover{
+  background-color: #ccc;
+}
+
+.card{
+  width: 50%;
   border-radius: 10px;
   padding: 30px 10px 10px;
   background-color: #f1f1f1;
